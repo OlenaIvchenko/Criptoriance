@@ -1,19 +1,12 @@
-# Start website development config
+№24 - Cryptoriance
 
-## How to use?
-<br>
+**Репозиторій**:  `cryptoriance` 
 
-### Run once (if you don't have packages)
-```bash
-npm run install:globaly
-```
+**Основна гілка**: `main`
 
-### Development
-```bash
-npm run dev
-```
+**Гілка для виконання ДЗ**: `develop`
 
-### Build
-```bash
-npm run build
-```
+**Github ментора**: `a1exalexander`
+
+**Коментар**: Обери один із варіантів
+
