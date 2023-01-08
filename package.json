@@ -1,0 +1,24 @@
+{
+  "name": "start-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "scss": "sass scss:.",
+    "scss:watch": "sass scss:. --watch",
+    "serve": "live-server",
+    "dev": "concurrently -c auto,auto -n SCSS,SERVER \"npm run scss:watch\" \"npm run serve\"",
+    "build": "npm run scss",
+    "install:globaly": "npm install -g sass live-server concurrently"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1exalexander/start-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a1exalexander/start-website/issues"
+  },
+  "homepage": "https://github.com/a1exalexander/start-website#readme"
+}
