@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
 @import './normalize';
 @import './reset';
 @import './variables';
 @import './mixins';
 @import './common';
+@import './function';
+
+@import './components/title';
+@import './components/subtitle';
+@import './components/button';
+@import './components/logo';
+@import './components/navigation';
+@import './components/menu-checkbox';
+@import './components/header';
+@import './components/hero-section';

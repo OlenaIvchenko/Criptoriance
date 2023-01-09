@@ -5,9 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Cryptoriance</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <header class="header header--fixed header--top container">
+      <a class="header_logo logo" href="#top"
+        ><img class="header_logo-img logo__img" src="scss/assets/svg/Logo.svg" alt="logo"
+      ></a>
+      <nav class="navigation">
+        <a class="navigation__link link" href="/">Log in</a>
+        <button class="navigation__button">Get started</button>
+      </nav>
+      <label class="menu">
+        <input class="menu__checkbox checkbox" type="checkbox" />
+        <span class="burger">
+          <span class="burger__item"></span>
+        </span>
+        <span class="menu__wrapper">
+          <span class="menu__card">
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Features</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Testimonials</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">News</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Privacy Policy</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Terms of Use</a></span
+            >
+          </span>
+        </span>
+      </label>
+    </header>
+    <div class="wrapper">
+      <section class="hero-section container" id="top">
+        <div class="hero-section__content">
+          <h1 class="title hero-section__title">Be the part of revolution</h1>
+          <p class="subtitle hero-section__subtitle">
+            Join the world’s most comprehensive and secure trading platform. Buy
+            and sell Bitcoin, Ethereum, XRP and many other cryptocurrencies with
+            fiat or crypto.
+          </p>
+          <button class="button hero-section__button">
+            <svg
+              class="button__img"
+              viewBox="0 0 14 10"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.34643 0.507159C7.61863 0.194937 8.09239 0.162487 8.40462 0.434681L12.9929 4.43468C13.1562 4.57711 13.25 4.78326 13.25 5.00001C13.25 5.21676 13.1562 5.42291 12.9929 5.56534L8.40462 9.56534C8.09239 9.83753 7.61863 9.80509 7.34643 9.49286C7.07424 9.18064 7.10669 8.70687 7.41891 8.43468L10.4984 5.75001H1.5C1.08579 5.75001 0.75 5.41422 0.75 5.00001C0.75 4.5858 1.08579 4.25001 1.5 4.25001H10.4984L7.41891 1.56534C7.10669 1.29315 7.07424 0.819382 7.34643 0.507159Z"
+              />
+            </svg>
+            Get started now
+          </button>
+        </div>
+        <div class="hero-section__wrapper-img">
+          <img
+            class="hero-section__grafic"
+            src="scss/assets/images/hero.png"
+            alt="graffic"
+          />
+          <img
+            class="hero-section__bitcoin"
+            src="scss/assets/svg/BitcoinHero.svg"
+            alt="bitcoin"
+          />
+          <img
+            class="hero-section__ethereum"
+            src="scss/assets/svg/EthereumHero.svg"
+            alt="ethereum"
+          />
+          <img
+            class="hero-section__line"
+            src="scss/assets/svg/line.svg"
+            alt="line"
+          />
+        </div>
+      </section>
+    </div>
   </body>
 </html>
