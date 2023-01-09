@@ -1,0 +1,34 @@
+.title {
+
+
+    @include text(rem(40px), 600, $color-white, 120%);
+    @include media ('tablet') {
+        font-size: rem(50px);
+    }
+
+    animation: flow 8s ease-in-out infinite;
+
+    background: linear-gradient(90deg, #ffffff, #268EEC, #21334e, #904e95);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+    @keyframes flow {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+
+
+

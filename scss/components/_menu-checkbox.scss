@@ -1,0 +1,79 @@
+.menu {
+    position: relative;
+    background-color: red;
+  
+    @include media('tablet'){
+      display: none;
+    }
+  
+  &__card {
+    pointer-events: none;
+  }
+  
+  &__wrapper {
+    transform: translateX(-1000vw);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: transform .2s;
+  }
+  
+  &__card {
+    background-color: $color-bg;
+    flex-grow: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__item {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222222;
+  }
+  
+  &__link {
+    @include text(rem(24px), 400, $color-white, 150%);
+    text-decoration: none;
+    padding-left: 15px;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    
+    &:checked ~ .menu__wrapper {
+      transform: translateX(0);
+      transition: transform .5s;
+    }
+    &:checked ~ .burger .burger__item {
+      opacity: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      transition: opacity 0.3s ease;
+    }
+    &:checked ~ .burger::after {
+      transform: rotateZ(-45deg) translate(2px);
+      width: 12px;
+      height: 1.5px;
+    }
+    &:checked ~ .burger::before {
+      transform: rotateZ(45deg) translate(2.7px);
+      width: 12px;
+      height: 1.5px;
+    }
+   }
+  }

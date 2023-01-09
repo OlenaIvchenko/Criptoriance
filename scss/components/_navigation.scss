@@ -1,0 +1,46 @@
+.navigation {
+    display: none;
+  
+    @include media('tablet') {
+  
+      display: block;
+  
+      &__link {
+        @include text(rem(14px), 400, $color-white, 120%);
+        margin-right: 36px;
+        text-decoration: none;
+        transition: all .5s ease;
+        border-radius: 7px;
+        outline: 1px solid transparent;
+        padding: 4px 4px 4px 4px;
+  
+        &:hover {
+          color: $color-blue-2;
+        }
+        &:focus {
+          outline: 1px solid $color-blue-2;
+          color: $color-white;
+        }
+      }
+  
+      &__button {
+        @include text(rem(14px), 400, $color-white, 16.59px);
+        padding: 7.5px 16px;
+        outline: 1px solid $color-white;
+        background: $color-black-2;
+        border-radius: 7px;
+        border: none;
+        transition: all .5s ease;
+  
+        &:hover {
+          color: $color-blue-2;
+          outline: 1px solid $color-blue-2;
+        }
+
+        &:focus {
+          color: $color-white;
+          outline: 1px solid $color-blue-2;
+        }
+      }
+    }
+  }

@@ -1,0 +1,6 @@
+.subtitle {
+    @include text(rem(16px), 400, $color-grey-2, 160%);
+    @include media('tablet') {
+      font-size: rem(18px);
+    }
+    }
