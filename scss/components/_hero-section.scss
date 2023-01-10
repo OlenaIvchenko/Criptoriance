@@ -1,6 +1,7 @@
 .hero-section {
     padding-top: 75px;
     height: 100%;
+    width: 100vw;
     @include media('tablet-wide') {
       display: flex;
       flex-direction: row;
@@ -58,27 +59,27 @@
       width: 40px;
       height: 40px;
       position: absolute;
-      top: 414px;
-      left: 253px;
+      top: 380px;
+      left: 340px;
       animation: fadeIn;
       opacity: 0;
       animation-duration: 4s;
       animation-delay: 5.5s;
       animation-fill-mode: both;
       @include media('phone-wide') {
-        top: 397px;
-        left: 322px;
+        top: 375px;
+        left: 375px;
       }
       @include media('tablet-small'){
-        top: 480px;
-        left: 500px;
+        top: 440px;
+        left: 545px;
       }
       @include media('tablet') {
         top: 527px;
-        left: 591px; 
+        left: 630px; 
       }
       @include media('tablet-wide') {
-        top: 590px;
+        top: 540px;
         left: 633px;
         width: 100px;
         height: 100px;
@@ -88,26 +89,30 @@
       width: 40px;
       height: 40px;
       position: absolute;
-      top: 242px;
+      top: 360px;
       left: 0;
       animation: fadeIn;
       opacity: 0;
       animation-duration: 4s;
       animation-delay: 5s;
       animation-fill-mode: both;
+      transition: transform 3s infinite linear;
+      transform: rotate3d(1, 1, 0, 360deg);
       @include media('phone-wide') {
-        top: 324px;
+        top: 360px;
         left: 56px;
       }
       @include media('tablet-small') {
-        top: 433px;
+        top: 420px;
+        left: 120px
       }
       @include media('tablet') {
-        top: 485px;
+        top: 470px;
+        left: 100px;
       }
       @include media('tablet-wide') {
-        top: 461px;
-        left: -322px;
+        top: 420px;
+        left: -272px;
         width: 100px;
         height: 100px;
       }
@@ -142,8 +147,8 @@
       @include media('tablet') {
         width: 955px;
         height: 405px;
-        top: 195px;
-        left: -3px;
+        top: 275px;
+        left: 10px;
       }
       @include media('tablet-wide') {
         width: 1823.5px;
@@ -155,6 +160,7 @@
   }
   
   @keyframes fadeIn {
+
     0% {
       opacity: 0;
     }
@@ -169,6 +175,7 @@
   }
   
   @keyframes fadeIn-grafic {
+    
     0% {
       opacity: 0;
       transform: translateX(100vw);

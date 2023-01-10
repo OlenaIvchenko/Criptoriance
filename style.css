@@ -687,12 +687,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 768px) {
-  .container {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-}
 
 .title {
   font-size: 4rem;
@@ -949,6 +943,7 @@ body {
 .hero-section {
   padding-top: 75px;
   height: 100%;
+  width: 100vw;
 }
 @media only screen and (min-width: 1024px) {
   .hero-section {
@@ -1014,8 +1009,8 @@ body {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 414px;
-  left: 253px;
+  top: 380px;
+  left: 340px;
   animation: fadeIn;
   opacity: 0;
   animation-duration: 4s;
@@ -1024,25 +1019,25 @@ body {
 }
 @media only screen and (min-width: 480px) {
   .hero-section__bitcoin {
-    top: 397px;
-    left: 322px;
+    top: 375px;
+    left: 375px;
   }
 }
 @media only screen and (min-width: 640px) {
   .hero-section__bitcoin {
-    top: 480px;
-    left: 500px;
+    top: 440px;
+    left: 545px;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-section__bitcoin {
     top: 527px;
-    left: 591px;
+    left: 630px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .hero-section__bitcoin {
-    top: 590px;
+    top: 540px;
     left: 633px;
     width: 100px;
     height: 100px;
@@ -1052,34 +1047,38 @@ body {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 242px;
+  top: 360px;
   left: 0;
   animation: fadeIn;
   opacity: 0;
   animation-duration: 4s;
   animation-delay: 5s;
   animation-fill-mode: both;
+  transition: transform 3s infinite linear;
+  transform: rotate3d(1, 1, 0, 360deg);
 }
 @media only screen and (min-width: 480px) {
   .hero-section__ethereum {
-    top: 324px;
+    top: 360px;
     left: 56px;
   }
 }
 @media only screen and (min-width: 640px) {
   .hero-section__ethereum {
-    top: 433px;
+    top: 420px;
+    left: 120px;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-section__ethereum {
-    top: 485px;
+    top: 470px;
+    left: 100px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .hero-section__ethereum {
-    top: 461px;
-    left: -322px;
+    top: 420px;
+    left: -272px;
     width: 100px;
     height: 100px;
   }
@@ -1117,8 +1116,8 @@ body {
   .hero-section__line {
     width: 955px;
     height: 405px;
-    top: 195px;
-    left: -3px;
+    top: 275px;
+    left: 10px;
   }
 }
 @media only screen and (min-width: 1024px) {

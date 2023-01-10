@@ -32,10 +32,11 @@ html {
     max-width: 1100px;
     padding-left: 16px;
     padding-right: 16px;
-    @include media('tablet') {
-        padding-left: 64px;
-        padding-right: 64px;
-    }
+    // @include media('tablet') {
+    //     padding-left: 64px;
+    //     padding-right: 64px;
+    // }
+    
         margin: {
         left: auto;
         right: auto;
